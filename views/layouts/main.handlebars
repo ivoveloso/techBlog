@@ -12,27 +12,27 @@
 <body>
   <div class="flex-column">
     <header class="display-flex">
-      <h2 style="padding: 10px">
-        <a href="/">Home</a>
+      <h2 style="padding: 10px; color: rgb(236, 255, 205)">
+        <a class="btn btn-dark" href="/">Home</a>
       </h2>
       <h2 style="padding: 10px">
-        <a href="/profile">Dashboard</a>
+        <a class="btn btn-dark" href="/profile">Dashboard</a>
       </h2>
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
       <h2 style="padding: 10px">
-        <a class="no-button" id="logout">logout</a>
+        <a class="btn btn-dark" id="logout">logout</a>
         </h2>
         {{else}}
       <h2 style="padding: 10px">
-        <a href="/login">login</a>
+        <a class="btn btn-dark" href="/login">login</a>
       </h2>
         {{/if}}
       </nav>
     </header>
     <header style="padding: 0 0 15px 15px;">
-    <h1 style="color: white; border: 1px solid; border-radius: 15px; padding: 10px; box-shadow: 5px 10px; margin: 10px; display: inline-grid;">The Tech Blog</h1>
+    <h1 style="color: rgb(236, 255, 205); border: 1px solid; border-radius: 15px; padding: 10px; box-shadow: 5px 10px; margin: 10px; display: inline-grid;">The Tech Blog</h1>
     </header>
     <main class="container container-fluid mt-5">
       <!-- Render the sub layout -->
